@@ -16,6 +16,11 @@
 		AC06129F23F0F7AB00640A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC06129D23F0F7AB00640A01 /* LaunchScreen.storyboard */; };
 		AC0612AA23F0F7AC00640A01 /* Archery_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612A923F0F7AC00640A01 /* Archery_AppTests.swift */; };
 		AC0612B523F0F7AC00640A01 /* Archery_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612B423F0F7AC00640A01 /* Archery_AppUITests.swift */; };
+		AC0612C923F0F7EC00640A01 /* ArrowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612C423F0F7EC00640A01 /* ArrowProtocol.swift */; };
+		AC0612CA23F0F7EC00640A01 /* PolarArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612C523F0F7EC00640A01 /* PolarArrow.swift */; };
+		AC0612CB23F0F7EC00640A01 /* Posn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612C623F0F7EC00640A01 /* Posn.swift */; };
+		AC0612CD23F0FA5400640A01 /* End.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612CC23F0FA5400640A01 /* End.swift */; };
+		AC0612D023F102CF00640A01 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612CF23F102CF00640A01 /* Round.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		AC0612B023F0F7AC00640A01 /* Archery AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Archery AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0612B423F0F7AC00640A01 /* Archery_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archery_AppUITests.swift; sourceTree = "<group>"; };
 		AC0612B623F0F7AC00640A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0612C423F0F7EC00640A01 /* ArrowProtocol.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = ArrowProtocol.swift; sourceTree = "<group>"; };
+		AC0612C523F0F7EC00640A01 /* PolarArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarArrow.swift; sourceTree = "<group>"; };
+		AC0612C623F0F7EC00640A01 /* Posn.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = Posn.swift; sourceTree = "<group>"; };
+		AC0612CC23F0FA5400640A01 /* End.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = End.swift; sourceTree = "<group>"; };
+		AC0612CF23F102CF00640A01 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		AC06128F23F0F7A800640A01 /* Archery App */ = {
 			isa = PBXGroup;
 			children = (
+				AC0612CE23F0FA5C00640A01 /* Model */,
 				AC06129023F0F7A800640A01 /* AppDelegate.swift */,
 				AC06129223F0F7A800640A01 /* SceneDelegate.swift */,
 				AC06129423F0F7A800640A01 /* FirstViewController.swift */,
@@ -129,6 +140,18 @@
 				AC0612B623F0F7AC00640A01 /* Info.plist */,
 			);
 			path = "Archery AppUITests";
+			sourceTree = "<group>";
+		};
+		AC0612CE23F0FA5C00640A01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC0612C623F0F7EC00640A01 /* Posn.swift */,
+				AC0612C423F0F7EC00640A01 /* ArrowProtocol.swift */,
+				AC0612C523F0F7EC00640A01 /* PolarArrow.swift */,
+				AC0612CC23F0FA5400640A01 /* End.swift */,
+				AC0612CF23F102CF00640A01 /* Round.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0612CA23F0F7EC00640A01 /* PolarArrow.swift in Sources */,
+				AC0612D023F102CF00640A01 /* Round.swift in Sources */,
 				AC06129723F0F7A800640A01 /* SecondViewController.swift in Sources */,
+				AC0612CB23F0F7EC00640A01 /* Posn.swift in Sources */,
+				AC0612CD23F0FA5400640A01 /* End.swift in Sources */,
+				AC0612C923F0F7EC00640A01 /* ArrowProtocol.swift in Sources */,
 				AC06129523F0F7A800640A01 /* FirstViewController.swift in Sources */,
 				AC06129123F0F7A800640A01 /* AppDelegate.swift in Sources */,
 				AC06129323F0F7A800640A01 /* SceneDelegate.swift in Sources */,
