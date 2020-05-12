@@ -21,6 +21,7 @@
 		AC0612CB23F0F7EC00640A01 /* Posn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612C623F0F7EC00640A01 /* Posn.swift */; };
 		AC0612CD23F0FA5400640A01 /* End.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612CC23F0FA5400640A01 /* End.swift */; };
 		AC0612D023F102CF00640A01 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0612CF23F102CF00640A01 /* Round.swift */; };
+		AC278DD4246AFD61006A4AEE /* PosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC278DD3246AFD61006A4AEE /* PosTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		AC0612C623F0F7EC00640A01 /* Posn.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = Posn.swift; sourceTree = "<group>"; };
 		AC0612CC23F0FA5400640A01 /* End.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = End.swift; sourceTree = "<group>"; };
 		AC0612CF23F102CF00640A01 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		AC278DD3246AFD61006A4AEE /* PosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				AC0612A923F0F7AC00640A01 /* Archery_AppTests.swift */,
 				AC0612AB23F0F7AC00640A01 /* Info.plist */,
+				AC278DD3246AFD61006A4AEE /* PosTests.swift */,
 			);
 			path = "Archery AppTests";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC278DD4246AFD61006A4AEE /* PosTests.swift in Sources */,
 				AC0612AA23F0F7AC00640A01 /* Archery_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

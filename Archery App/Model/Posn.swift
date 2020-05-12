@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Posn {
+public class Posn : Equatable {
+    
     private var x: Double
     private var y: Double
     
@@ -23,37 +24,57 @@ class Posn {
     }
     
     // Takes in a Posn and returns a new Posn with the x's and y's added together
-    func add(other: Posn) -> Posn {
+    public func add(other: Posn) -> Posn {
         return other.add(x: self.x, y: self.y)
     }
     
     // Takes in an x and y, returns a new Posn with the x's and y's added together
-    func add(x: Double, y: Double) -> Posn {
+    public func add(x: Double, y: Double) -> Posn {
         return Posn(x: self.x + x,y: self.y + y)
     }
     
     
     // Returns a new posn with x and y values divided by the given divisor
-    func div(div: Double) -> Posn {
+    public func div(div: Double) -> Posn {
         return Posn(x: self.x / div, y: self.y / div)
     }
     
     // Returns a new posn with the same x and y values
-    func getSelf() -> Posn {
+    public func getSelf() -> Posn {
         return Posn(x: self.x, y: self.y)
     }
     
     // Returns the x for this Posn
-    func getX() -> Double {
+    public func getX() -> Double {
         return self.x
     }
     
     // Returns the y for this Posn
-    func getY() -> Double {
+    public func getY() -> Double {
         return self.y
+    }
+    
+    // Updates the polar theta of this Posn
+    public func updateTheta(theta: Double) {
+        let rad = pow((pow(self.x, 2) + pow(self.y, 2)), 0.5)
+        updateXY(theta: theta, rad: rad)
+    }
+    
+    // Updates the polar rad of this Pos
+    public func updateRad(rad: Double) {
+        let theta = tan(self.x / self.y)
+        updateXY(theta: theta, rad: rad)
+    }
+    
+    // Updates the XY of this Pos to the given polar coordinates
+    private func updateXY(theta: Double, rad: Double) {
+        self.x = cos(theta) * rad
+        self.y = sin(theta) * rad
     }
   
     
-    
+    public static func == (lhs: Posn, rhs: Posn) -> Bool {
+        return abs(lhs.getX() - rhs.getX()) < 0.001 && abs(lhs.getY() - rhs.getY()) < 0.001
+    }
     
 }
