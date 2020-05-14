@@ -50,16 +50,16 @@ class PosTests: XCTestCase {
     }
     
     func testInit() {
-        let posn1 = Posn(x: 10, y: 0)
+        let posn1 = Posn(x: 0, y: 10)
         let posn2 = Posn(theta: Double.pi / 2, rad: 10)
         
-        let posn3 = Posn(x: 0, y: 5)
+        let posn3 = Posn(x: 5, y: 0)
         let posn4 = Posn(theta: 0, rad: 5)
         
-        let posn5 = Posn(x: 0, y: -15)
+        let posn5 = Posn(x: -15, y: 0)
         let posn6 = Posn(theta: Double.pi, rad: 15)
         
-        let posn7 = Posn(x: -20, y: 0)
+        let posn7 = Posn(x: 0, y: -20)
         let posn8 = Posn(theta: 3 * Double.pi / 2, rad: 20)
         
         XCTAssertEqual(posn1, posn2)
