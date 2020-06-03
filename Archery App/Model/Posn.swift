@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Represents the cartesian coordinate system of the target,
+//  with (0,0) being the center.
 public class Posn : Equatable {
     
     private var x: Double

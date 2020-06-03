@@ -8,10 +8,11 @@
 
 import Foundation
 
+// Represents a shot end of arrows.
 class End {
     
     private var endSize: Int
-    private var arrows: [PolarArrow]
+    private var arrows: [ArrowProtocol]
     
     init(endSize: Int, arrowSize: Double) {
         self.endSize = endSize
@@ -40,7 +41,7 @@ class End {
     func getTotalPosn() -> Posn {
         var p: Posn = Posn.init(x: 0, y: 0)
         for arrow in arrows {
-            if (arrow.isInitialized()) {
+            if (arrow.initialized()) {
                 p = p.add(other: arrow.getPosn())
             }
         }
@@ -51,7 +52,7 @@ class End {
     func getInitArrows() -> Int {
         var numInit: Int = 0
         for arrow in arrows {
-            if (arrow.isInitialized()) {
+            if (arrow.initialized) {
                 numInit += 1
             }
         }
@@ -59,11 +60,11 @@ class End {
     }
     
     // gets the arrow at the specified index
-    func getArrow(index: Int) -> PolarArrow {
+    func getArrow(index: Int) -> ArrowProtocol {
         return self.arrows[index]
     }
     
-    func getArrows() -> [PolarArrow] {
+    func getArrows() -> [ArrowProtocol] {
         return self.arrows
     }
     

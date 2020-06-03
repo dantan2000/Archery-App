@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+// Represents a shot round composed of Ends.
 class Round {
     
     private var roundSize: Int
